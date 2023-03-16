@@ -1,0 +1,182 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: "open sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+* {
+  border-radius: 0 !important;
+}
+
+body.modal-open > :not(.modal) {
+  filter: blur(2.5px);
+  -webkit-filter: blur(2.5px);
+}
+
+.nom {
+  color: rgb(225, 225, 225);
+  font-size: 1.3em;
+  font-family: "factoria", serif;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.3rem;
+}
+
+#icone {
+  background-image: url("../medias/logout.png");
+  background-size: contain;
+  height: 35px;
+  width: 35px;
+}
+#icone:hover {
+  background-image: url("../medias/logout_hover.png");
+}
+
+h1 {
+  font-family: "factoria", serif;
+  font-size: 4.5rem;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+}
+
+form {
+  color: #222;
+}
+form .form_img {
+  color: white;
+}
+form .form_img input#image {
+  letter-spacing: 0.1rem;
+}
+
+.bouton {
+  background-color: rgb(75, 75, 75);
+  border: 1.5px solid #3c3c3c;
+  letter-spacing: 0.1rem;
+}
+.bouton:hover, .bouton:active {
+  background-color: rgb(50, 50, 50) !important;
+  border: 1.5px solid #2b2b2b !important;
+}
+
+.lien {
+  color: rgb(126, 143, 189);
+}
+.lien:hover {
+  color: rgb(86, 100, 138);
+}
+
+.message_erreur {
+  background-color: rgba(192, 78, 78, 0.5);
+  border: 1.5px solid rgb(117, 68, 68);
+  color: rgb(225, 225, 225);
+}
+
+.message_succes {
+  background-color: rgb(72, 106, 94);
+  border: 1.5px solid rgb(44, 57, 54);
+  color: rgb(255, 255, 255);
+}
+
+.message_echec {
+  background-color: rgb(80, 49, 49);
+  border: 1.5px solid rgb(48, 38, 38);
+}
+
+.chat {
+  background-color: rgb(50, 50, 50);
+  background-color: #29292c;
+  border: 1.5px solid #2b2b2b;
+  height: 65vh;
+  max-width: 750px !important;
+}
+.chat .bloc_messages {
+  height: 60vh;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+.chat .bloc_messages #lara_gpt {
+  background-color: rgb(55, 62, 82);
+}
+.chat .bloc_messages #lara_gpt .lien_google {
+  color: rgb(122, 190, 210);
+}
+.chat .bloc_messages #lara_gpt .lien_google:hover {
+  color: rgb(122, 224, 255);
+}
+.chat .bloc_messages #utilisateur {
+  background-color: rgb(77, 89, 123);
+}
+.chat .bloc_messages #lara_gpt,
+.chat .bloc_messages #utilisateur {
+  border: 1.5px solid #2b2b2b;
+  box-shadow: 3px 3px 6px #111;
+  opacity: 0.7;
+}
+.chat .bloc_messages #lara_gpt .timestamp,
+.chat .bloc_messages #utilisateur .timestamp {
+  color: rgb(150, 150, 150);
+  min-width: 80px;
+}
+.chat .bloc_messages #lara_gpt .timestamp .date,
+.chat .bloc_messages #utilisateur .timestamp .date {
+  color: rgb(125, 125, 125);
+}
+.chat .bloc_messages #lara_gpt h6,
+.chat .bloc_messages #utilisateur h6 {
+  color: rgb(200, 200, 200);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+.chat .bloc_messages #lara_gpt img,
+.chat .bloc_messages #utilisateur img {
+  border-radius: 100% !important;
+  border: 1.5px solid rgb(115, 115, 115);
+  height: 50px;
+  width: 50px;
+}
+.chat .messages_surbrillance:first-child #lara_gpt,
+.chat .messages_surbrillance:first-child #utilisateur,
+.chat .messages_surbrillance:nth-child(2) #lara_gpt,
+.chat .messages_surbrillance:nth-child(2) #utilisateur {
+  opacity: 1;
+}
+.chat .champs_texte {
+  height: calc(5vh - 1.5px);
+}
+.chat .champs_texte textarea,
+.chat .champs_texte input[type=submit] {
+  border-color: #2b2b2b;
+  border-radius: 0;
+  border-style: solid;
+  height: 100%;
+}
+.chat .champs_texte textarea {
+  background-color: rgb(225, 225, 225);
+  border-bottom-width: 1.5px;
+  resize: none;
+}
+.chat .champs_texte textarea:focus {
+  outline: none !important;
+}
+.chat .champs_texte input[type=submit] {
+  background-color: rgb(75, 75, 75);
+  border-width: 0px 0px 1.5px 1.5px;
+  color: white;
+  letter-spacing: 0.1rem;
+  outline: none;
+}
+.chat .champs_texte input[type=submit]:hover {
+  background-color: rgb(50, 50, 50);
+}
+.chat ::-webkit-scrollbar {
+  background-color: rgb(126, 143, 189);
+  background-color: rgb(50, 50, 50);
+  width: 0.75rem;
+}
+.chat ::-webkit-scrollbar-thumb {
+  background-color: rgb(25, 25, 25);
+}/*# sourceMappingURL=style.css.map */
